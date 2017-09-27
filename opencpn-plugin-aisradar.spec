@@ -28,7 +28,7 @@ Plugin for OpenCPN that displays AIS targets in a radar view style
 %prep
 %autosetup -n %{project}-%{commit}
 
-#sed -i -e s'/SET(PREFIX_LIB lib)/SET(PREFIX_LIB %{_lib})/' cmake/PluginInstall.cmake
+sed -i -e s'/SET(PREFIX_LIB lib)/SET(PREFIX_LIB %{_lib})/' cmake/PluginInstall.cmake
 
 mkdir build
 
